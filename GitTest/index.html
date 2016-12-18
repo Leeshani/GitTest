@@ -3,9 +3,25 @@
 <head>
     <title></title>
 </head>
-<body>
-    <div>
-
-    </div>
+<body ng-controller="mainCtrl">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.name}}</td>
+                <td>{{employee.gender | gender}}</td>
+                <td>{{employee.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/controller.js"></script>
+    <script src="Scripts/filter.js"></script>
 </body>
 </html>
