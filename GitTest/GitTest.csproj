@@ -77,10 +77,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="empList.html" />
+    <Content Include="employee.html" />
+    <Content Include="employeeRest.html" />
+    <Content Include="empTable.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\controller.js" />
+    <Content Include="Scripts\empIncludeController.js" />
+    <Content Include="Scripts\employeeRest.js" />
     <Content Include="Scripts\filter.js" />
     <Content Include="Web.config" />
   </ItemGroup>

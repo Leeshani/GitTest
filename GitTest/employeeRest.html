@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myModule">
+<head>
+    <title></title>
+</head>
+<body ng-controller="myController">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.Name}}</td>
+                <td>{{employee.Gender}}</td>
+                <td>{{employee.Email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/employeeRest.js"></script>
+</body>
+</html>

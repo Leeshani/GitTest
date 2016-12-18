@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="mainApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="empController">
+    Select View :
+    <select ng-model="employeeView">
+        <option value="empTable.html">Table</option>
+        <option value="empList.html">List</option>
+    </select>
+    <div ng-include="employeeView"></div>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/empIncludeController.js"></script>
+</body>
+</html>
